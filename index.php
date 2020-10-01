@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+	<head>
+		<!-- metas -->
+		<meta charset="utf-8">
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="theme-color" content="#fb8c00">
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="_assets/images/favicon.ico" />
+		
+		<!-- search google -->
+		<meta name="description" content="AGÊNCIA PUBLIKANDO - Agencia de marketing digital, criacao de branding, website, sistemas, aplicativos entre outros, atráves de muita criativade inovando sempre !"/>
+		<meta name="keywords" content="publikando, agência, publicidade, design, gráfico, inovar, inovando, website, identidade visual, landing page, branding, criatividade, aplicativos, marketing, digital, sistemas, aplicações."/>
+
+		<!-- OG facebook -->
+		<meta property="og:locale" content="pt_BR">
+		<meta property="og:url" content="index.php">
+		<meta property="og:title" content="Agencia Publikando">
+		<meta property="og:site_name" content="Agencia Publikando">
+		<meta property="og:description" content="Agencia de marketing digital, criacao de branding, website, sistemas, aplicativos entre outros, atráves de muita criativade inovando sempre !">
+		<meta property="og:image" content="_assets/images/logo.png">
+		<meta property="og:image:secure_url" content="https://agenciapublikando.com.br/_assets/images/logo.png">
+		<meta property="og:image:type" content="image/jpeg">
+		<meta property="og:image:width" content="150"> <!-- pixel -->
+		<meta property="og:image:height" content="150"> <!-- pixel -->
+		<meta property="og:type" content="website">
+
+		<!-- titulo -->
+		<title>Agência Publikando | Sua marca em boas mãos</title>
+
+		<!-- Icones materilalize -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		<!-- Styles -->
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="_assets/css/index.completo.css">
+		<style type="text/css">
+			#myVideo {
+			  position: fixed;
+			  right: 0;
+			  bottom: 0;
+			  min-width: 100%; 
+			  min-height: 100%;
+			  pointer-events: none;
+			  opacity: 0.5;
+			}
+			main{
+				z-index: 11;
+			}
+			body{
+				background-color: rgba(251, 140, 1, 1);
+			    display: flex;
+			    min-height: 100vh;
+			    flex-direction: column;
+			    background-repeat: no-repeat;
+			    background-position: center;
+			    background-size: cover;
+			    overflow-x: hidden;
+			    z-index: 100;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- engajamento -->
+		<h1 style="display: none;">Agência Publikando Sua marca em boas mãos</h1>
+		<video autoplay muted loop id="myVideo">
+		  <source src="_assets/images/background.mp4" type="video/mp4">
+		  Your browser does not support HTML5 video.
+		</video>
+		<div id="bg"></div>
+		<!-- conteudo -->
+		<main>
+			<div class="container">
+				<!-- linha 1 -->
+				<div class="row rowTop">
+					<div class="col s12 l3 posLogo divLogo">
+						<a href="/">
+							<img src="_assets/images/logotipo.png">
+						</a>
+					</div>
+				</div>
+				<!-- linha 2 -->
+				<div class="row menuNav">
+					<div class="col s1 l1 right">
+						<div>
+							<a href="/" class="menuIcon tooltipped" data-position="left" data-tooltip="Home">
+								<img src="_assets/images/home_41x41.svg">
+							</a>
+						</div>
+						<div>
+							<a href="cases.php" class="menuIcon tooltipped" data-position="left" data-tooltip="Cases">
+								<img src="_assets/images/portfolio_41x29.svg">
+							</a>
+						</div>
+						<div>
+							<a href="#contato-modal" class="menuIcon tooltipped modal-trigger" data-position="left" data-tooltip="Contato">
+								<img src="_assets/images/contact_37x41.svg">
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- linha 3 -->
+				<div class="row row3 conteudo">
+					<div class="col s6 l3 center">
+						<a href="#md-modal" class="iconBtn center modal-trigger">
+							<img src="_assets/images/mktdgt_108x108.svg">
+							<p>Marketing Digital</p>
+						</a>
+					</div>
+					<div class="col s6 l3 center">
+						<a href="#iv-modal" class="iconBtn center modal-trigger">
+							<img src="_assets/images/idvisual_108x108.svg">
+							<p>Identidade Visual</p>
+						</a>
+					</div>
+					<div class="col s6 l3 center coldown">
+						<a href="#wd-modal" class="iconBtn center modal-trigger">
+							<img src="_assets/images/webdsgn_108x108.svg">
+							<p>Web <br> Design</p>
+						</a>
+					</div>
+					<div class="col s6 l3 center coldown">
+						<a href="#nt-modal" class="iconBtn center modal-trigger">
+							<img src="_assets/images/nvtcnlg_108x108.svg">
+							<p>Novas Tecnologias</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="row row3 conteudoMob">
+					<div class="col s6 l3 center">
+						<a href="#md-modal-mob" class="iconBtn center modal-trigger">
+							<img src="_assets/images/mktdgt_108x108.svg">
+							<p>Marketing Digital</p>
+						</a>
+					</div>
+					<div class="col s6 l3 center">
+						<a href="#iv-modal-mob" class="iconBtn center modal-trigger">
+							<img src="_assets/images/idvisual_108x108.svg">
+							<p>Identidade Visual</p>
+						</a>
+					</div>
+					<div class="col s6 l3 center coldown">
+						<a href="#wd-modal-mob" class="iconBtn center modal-trigger">
+							<img src="_assets/images/webdsgn_108x108.svg">
+							<p>Web <br> Design</p>
+						</a>
+					</div>
+					<div class="col s6 l3 center coldown">
+						<a href="#nt-modal-mob" class="iconBtn center modal-trigger">
+							<img src="_assets/images/nvtcnlg_108x108.svg">
+							<p>Novas Tecnologias</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- menu mobile -->
+			<div class="row footer-fixed menuNavMobile white">
+				<div class="col s4 center"><a href="index"><h4 class="orange-text">Home</h4></a></div>
+				<div class="col s4 center"><a href="#"><h4>Cases</h4></a></div>
+				<div class="col s4 center"><a href="#contato-modal-mob" class="modal-trigger"><h4>Contatos</h4></a></div>
+			</div>
+		</main>
+
+		<!-- modal contato -->
+		<div id="contato-modal" class="modal">
+			<form class="col s12 form_contact" action="#" method="POST">
+				<div class="modal-content center">
+					<h4>Contate-nos</h4>
+						<div class="row">
+							<div class="input-field col s6 l4">
+								<i class="material-icons prefix">account_circle</i>
+								<input id="nome" type="text" class="validate" name="nome" required="required">
+								<label for="nome">Nome</label>
+								<p class="p_warning">nome é necessário</p>
+							</div>
+							<div class="input-field col s6 l4">
+								<i class="material-icons prefix">alternate_email</i>
+								<input id="email" type="email" class="validate" name="email" required="required">
+								<label for="email">Email</label>
+								<p class="p_warning" style="margin-right: -38px">email inválido ou vazio</p>
+							</div>
+							<div class="input-field col s6 l4">
+								<i class="material-icons prefix">phone</i>
+								<input id="contato" type="tel" class="validate" name="contato">
+								<label for="contato">contato</label>
+							</div>
+							<div class="input-field col s6 l12">
+								<i class="material-icons prefix">message</i>
+								<textarea id="textarea" class="materialize-textarea" name="message" required="required"></textarea>
+								<label for="textarea">Mensagem</label>
+								<p class="p_warning">mensagem é necessário</p>
+							</div>
+						</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="sendContato btn waves-effect waves-light orange darken-1 btnSend">
+						<i class="material-icons left">send</i>
+						<label class="black-text lbl_form" style="display: none;">Enviando...</label>
+						<label class="white-text lbl_form_padrao">Enviar</label>
+					</button>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+				</div>
+			</form>
+		</div>
+
+		<!-- modal contato para mobile -->
+		<div id="contato-modal-mob" class="modal scrollInvisible">
+			<form class="col s12 form_contactMob" action="#" method="POST">
+				<div class="modal-content center">
+					<h4>Contate-nos</h4>
+						<div class="row">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">account_circle</i>
+								<input id="nomeforL" type="text" class="validate" name="nome" required="required">
+								<label for="nomeforL">Nome</label>
+								<p class="p_warning">nome é necessário</p>
+							</div>
+							<div class="input-field col s12">
+								<i class="material-icons prefix">alternate_email</i>
+								<input id="emailforL" type="email" class="validate" name="email" required="required">
+								<label for="emailforL">Email</label>
+								<p class="p_warning" style="margin-right: -38px">email inválido ou vazio</p>
+							</div>
+							<div class="input-field col s12">
+								<i class="material-icons prefix">phone</i>
+								<input id="contatoforL" type="tel" class="validate" name="contato">
+								<label for="contatoforL">Contato</label>
+							</div>
+							<div class="input-field col s12">
+								<i class="material-icons prefix">message</i>
+								<textarea id="textareaforL" class="materialize-textarea" name="message" required="required"></textarea>
+								<label for="textareaforL">Mensagem</label>
+								<p class="p_warning">mensagem é necessário</p>
+							</div>
+						</div>
+				</div>
+				<div class="modal-footer center">
+					<button type="button" class="sendContatoMob btn waves-effect waves-light orange darken-1 btnSend center">
+						<i class="material-icons left">send</i>
+						<label class="black-text lbl_form" style="display: none;">Enviando...</label>
+						<label class="white-text lbl_form_padrao">Enviar</label>
+					</button>
+				</div>
+				<div class="modal-footer center">
+					<a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+				</div>
+			</form>
+		</div>
+
+		<!-- modal marketing digital -->
+		<div id="md-modal" class="modal scrollInvisible modal-fixed-footer">
+			<div class="modal-content">
+				<h4 class="title_text center colorModal_blue1">Marketing Digital</h4>
+				<hr class="divisor_titulo" />
+				<h5 class="dialog_text center subtitle">Resultados com base em serviços digitais</h5>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s3 l3">
+							<img src="_assets/images/05.svg" class="icon_imgModal">
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Planejamento</h5>
+							<p class="center dialog_text">Com base em estudos e métricas, desenvolvemos estratégias digitais para gerar mais resultado em menos tempo. Tornando o processo mais otimizado e mais </p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Mídias Digitais</h5>
+							<p class="center dialog_text">Gerenciamos e administramos suas redes sociais, tornando sua empresa mais visível e gerando um relacionamento mais estreito com seu cliente. Aumento de seguidores reais e personalização dos posts é um dos objetivos deste serviço</p>
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s3 l3">
+							<img src="_assets/images/06.svg" class="icon_imgModal center_imgsvg">
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s3 l3">
+							<img src="_assets/images/07.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Gestão de Conteúdo</h5>
+							<p class="center dialog_text">Utilizando as estratégias ideais para seu negócio, elaboramos e coordenamos ações a serem executadas para gerar mais visibilidade e resultado. Este serviço evita desperdício de tempo e direciona o fluxo de trabalho e funil de vendas</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Análise de Resultado</h5>
+							<p class="center dialog_text">Estudos e análises fazem parte de um bom marketing. Através dessas técnicas, redirecionamos o trabalho melhorando o desempenho digital e gerando um aumento no número de clientes</p>
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s3 l3">
+							<img src="_assets/images/08.svg" class="icon_imgModal center_imgsvg">
+						</div>
+					</div>
+				</modal>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+			</div>
+		</div>
+
+		<!-- modal identidade visual -->
+		<div id="iv-modal" class="modal scrollInvisible modal-fixed-footer">
+			<div class="modal-content">
+				<h4 class="title_text center colorModal_blue1">Identidade Visual</h4>
+				<hr class="divisor_titulo" />
+				<h5 class="dialog_text center subtitle">Diferencie seu negócio através de um design <br> moderno e funcional tornando-o único</h5>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s3 l3">
+							<img src="_assets/images/01.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Personalidade</h5>
+							<p class="center dialog_text">Assim como cada pessoa tem uma identidade única, com seu negócio não pode ser diferente. Através da soma de estudo e técnica, desenvolvemos desde a criação do nome até o manual da sua marca</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Recursos Atuais</h5>
+							<p class="center dialog_text">Além do conhecimento e experiência em criação, utilizamos os mais recentes softwares e técnicas para desenvolvimento de pequenos projetos até grandes campanhas</p>
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s3 l3">
+							<img src="_assets/images/02.svg" class="icon_imgModal">
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s3 l3">
+							<img src="_assets/images/03.svg" class="icon_imgModal">
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Seja diferente</h5>
+							<p class="center dialog_text">Através de uma marca única, seu negócio pode se diferenciar no mercado cada vez mais competitivo. Trabalhamos para que seu negócio seja impactante e se posicione on e off-line</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Posicionamento</h5>
+							<p class="center dialog_text">Mais do que um desenho bonito. Uma identidade visual bem desenvolvida transmite os valores do seu negócio através de elementos, cores, tipografias, entre outros recursos necessários para se posicionar no mercado</p>
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s3 l3">
+							<img src="_assets/images/04.svg" class="icon_imgModal center_imgsvg">
+						</div>
+					</div>
+				</modal>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+			</div>
+		</div>
+
+		<!-- modal web design -->
+		<div id="wd-modal" class="modal scrollInvisible modal-fixed-footer">
+			<div class="modal-content">
+				<h4 class="title_text center colorModal_blue1">Web Design</h4>
+				<hr class="divisor_titulo" />
+				<h5 class="dialog_text center subtitle">Design elegante com rapidez e fácil usabilidade</h5>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s3 l3">
+							<img src="_assets/images/09.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle" style="margin-bottom: 0">Design Responsivo</h5>
+							<p class="center dialog_text" style="margin-top: 0; margin-bottom: 0">Hoje um site adaptável não é mais uma tendência, é um requisito necessário para ter uma boa visibilidade na internet. Através de tecnologias atuais e o melhor da programação, montamos seu site com elegância e usabilidade</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle" style="margin-bottom: 0">SEO<br/><sub class="title_text" style="margin-top: 0; margin-bottom: 0">(Otimização do Mecanismo de Busca)</sub></h5>
+							<p class="center dialog_text" style="margin-top: 0; margin-bottom: 0">Esse serviço também conhecido como otimização de sites, em resumo é uma forma de aumentar os aumentar a visibildade do site através de um conjunto de técnicas que melhoram seu posicionamento nos resultados orgânicos dos mecanismos de busca, como Google e Bing</p>
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s3 l3">
+							<img src="_assets/images/10.svg" class="icon_imgModal center_imgsvg">
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s3 l3">
+							<img src="_assets/images/11.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Design UI/UX</h5>
+							<p class="center dialog_text">Aplicando os conceitos de User Interface e User Experience integramos um layout atrativo com a melhor usabilidade possível para o usuário. Resultando em uma experiência diferenciada</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Segurança</h5>
+							<p class="center dialog_text">Visando o melhor em segurança para seu cliente, utilizamos as melhores técnicas para manter seu site seguro, incluindo o certificado SSL que é um selo essencial para mantê-lo seguro</p>
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s3 l3">
+							<img src="_assets/images/12.svg" class="icon_imgModal" style="width: 60%!important;">
+						</div>
+					</div>
+				</modal>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+			</div>
+		</div>
+
+		<!-- modal novas tecnologias -->
+		<div id="nt-modal" class="modal scrollInvisible modal-fixed-footer">
+			<div class="modal-content">
+				<h4 class="title_text center colorModal_blue1">Novas Tecnologias</h4>
+				<hr class="divisor_titulo" />
+				<h5 class="dialog_text center subtitle">Utilidades digitais para tornar sua empresa atual</h5>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s3 l3">
+							<img src="_assets/images/13.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Inovação</h5>
+							<p class="center dialog_text">Hoje a inovação tomou conta do mundo. Com esse pensamento em mente, trabalhamos constantemente para desenvolver aplicações, soluções tecnológicas entre outros recursos inovadores para inserir seu negócio na atualidade.</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Integração</h5>
+							<p class="center dialog_text">Fornecemos sistemas integrados para sua empresa, facilitando o contato fornecedor-empresa-cliente. Utilizando uma aplicação com este tipo de integração, além de economizar tempo você tem a oportunidade de inovar a forma de trabalho da sua empresa</p>
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s3 l3">
+							<img src="_assets/images/14.svg" class="icon_imgModal" style="margin-top: 30% !important">
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s3 l3">
+							<img src="_assets/images/15.svg" class="icon_imgModal" style="width: 70% !important">
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Saia na Frente</h5>
+							<p class="center dialog_text">Através de aplicações tecnológicas voltadas para seu negócio, você se diferencia da concorrência, torna seu trabalho mais atrativo e dinâmico com resultados em menos tempo. Seu cliente fica satisfeito e sua empresa se torna referência no mercado</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s8 l8">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Identidade</h5>
+							<p class="center dialog_text">Desenvolvemos soluções específicas para cada tipo de negócio. Nosso foco é criar soluções voltadas para otimização de trabalho e tempo, gerando mais resultado. Cada empresa que atendemos tem uma aplicação única, devido as suas especificidades</p>
+						</div>
+						<div class="col s1 l1">
+							<div class="divisor_descricao"></div>
+						</div>
+						<div class="col s3 l3">
+							<img src="_assets/images/16.svg" class="icon_imgModal" style="width: 70% !important;">
+						</div>
+					</div>
+				</modal>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+			</div>
+		</div>
+
+
+		<!-- MOBILE -->
+		<!-- modal identidade visual MOBILE -->
+		<div id="md-modal-mob" class="modal scrollInvisible modal-fixed-footer">
+			<div class="modal-content">
+				<h4 class="title_text center colorModal_blue1">Marketing Digital</h4>
+				<hr class="divisor_titulo" />
+				<h5 class="dialog_text center subtitle">Resultados com base em serviços digitais</h5>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/05.svg" class="icon_imgModal">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Planejamento</h5>
+							<p class="center dialog_text">Com base em estudos e métricas, desenvolvemos estratégias digitais para gerar mais resultado em menos tempo. Tornando o processo mais otimizado e mais </p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/06.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Mídias Digitais</h5>
+							<p class="center dialog_text">Gerenciamos e administramos suas redes sociais, tornando sua empresa mais visível e gerando um relacionamento mais estreito com seu cliente. Aumento de seguidores reais e personalização dos posts é um dos objetivos deste serviço</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/07.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Gestão de Conteúdo</h5>
+							<p class="center dialog_text">Utilizando as estratégias ideais para seu negócio, elaboramos e coordenamos ações a serem executadas para gerar mais visibilidade e resultado. Este serviço evita desperdício de tempo e direciona o fluxo de trabalho e funil de vendas</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/08.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Análise de Resultado</h5>
+							<p class="center dialog_text">Estudos e análises fazem parte de um bom marketing. Através dessas técnicas, redirecionamos o trabalho melhorando o desempenho digital e gerando um aumento no número de clientes</p>
+						</div>
+					</div>
+				</modal>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+			</div>
+		</div>
+
+		<div id="iv-modal-mob" class="modal scrollInvisible modal-fixed-footer">
+			<div class="modal-content">
+				<h4 class="title_text center colorModal_blue1">Identidade Visual</h4>
+				<hr class="divisor_titulo" />
+				<h5 class="dialog_text center subtitle">Diferencie seu negócio através de um design <br> moderno e funcional tornando-o único</h5>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/01.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Personalidade</h5>
+							<p class="center dialog_text">Assim como cada pessoa tem uma identidade única, com seu negócio não pode ser diferente. Através da soma de estudo e técnica, desenvolvemos desde a criação do nome até o manual da sua marca</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/02.svg" class="icon_imgModal">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Recursos Atuais</h5>
+							<p class="center dialog_text">Além do conhecimento e experiência em criação, utilizamos os mais recentes softwares e técnicas para desenvolvimento de pequenos projetos até grandes campanhas</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/03.svg" class="icon_imgModal">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Seja diferente</h5>
+							<p class="center dialog_text">Através de uma marca única, seu negócio pode se diferenciar no mercado cada vez mais competitivo. Trabalhamos para que seu negócio seja impactante e se posicione on e off-line</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/04.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Posicionamento</h5>
+							<p class="center dialog_text">Mais do que um desenho bonito. Uma identidade visual bem desenvolvida transmite os valores do seu negócio através de elementos, cores, tipografias, entre outros recursos necessários para se posicionar no mercado</p>
+						</div>
+					</div>
+				</modal>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+			</div>
+		</div>
+
+		<div id="wd-modal-mob" class="modal scrollInvisible modal-fixed-footer">
+			<div class="modal-content">
+				<h4 class="title_text center colorModal_blue1">Web Design</h4>
+				<hr class="divisor_titulo" />
+				<h5 class="dialog_text center subtitle">Design elegante com rapidez e fácil usabilidade</h5>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/09.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle" style="margin-bottom: 0">Design Responsivo</h5>
+							<p class="center dialog_text" style="margin-top: 0; margin-bottom: 0">Hoje um site adaptável não é mais uma tendência, é um requisito necessário para ter uma boa visibilidade na internet. Através de tecnologias atuais e o melhor da programação, montamos seu site com elegância e usabilidade</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/10.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle" style="margin-bottom: 0">SEO<br/><sub class="title_text" style="margin-top: 0; margin-bottom: 0">(Otimização do Mecanismo de Busca)</sub></h5>
+							<p class="center dialog_text" style="margin-top: 0; margin-bottom: 0">Esse serviço também conhecido como otimização de sites, em resumo é uma forma de aumentar os aumentar a visibildade do site através de um conjunto de técnicas que melhoram seu posicionamento nos resultados orgânicos dos mecanismos de busca, como Google e Bing</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/11.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Design UI/UX</h5>
+							<p class="center dialog_text">Aplicando os conceitos de User Interface e User Experience integramos um layout atrativo com a melhor usabilidade possível para o usuário. Resultando em uma experiência diferenciada</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/12.svg" class="icon_imgModal">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Segurança</h5>
+							<p class="center dialog_text">Visando o melhor em segurança para seu cliente, utilizamos as melhores técnicas para manter seu site seguro, incluindo o certificado SSL que é um selo essencial para mantê-lo seguro</p>
+						</div>
+					</div>
+				</modal>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+			</div>
+		</div>
+
+		<div id="nt-modal-mob" class="modal scrollInvisible modal-fixed-footer">
+			<div class="modal-content">
+				<h4 class="title_text center colorModal_blue1">Novas Tecnologias</h4>
+				<hr class="divisor_titulo" />
+				<h5 class="dialog_text center subtitle">Utilidades digitais para tornar sua empresa atual</h5>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/13.svg" class="icon_imgModal center_imgsvg">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Inovação</h5>
+							<p class="center dialog_text">Hoje a inovação tomou conta do mundo. Com esse pensamento em mente, trabalhamos constantemente para desenvolver aplicações, soluções tecnológicas entre outros recursos inovadores para inserir seu negócio na atualidade.</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/14.svg" class="icon_imgModal" style="margin-top: 30% !important">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Integração</h5>
+							<p class="center dialog_text">Fornecemos sistemas integrados para sua empresa, facilitando o contato fornecedor-empresa-cliente. Utilizando uma aplicação com este tipo de integração, além de economizar tempo você tem a oportunidade de inovar a forma de trabalho da sua empresa</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/15.svg" class="icon_imgModal" style="width: 70% !important">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Saia na Frente</h5>
+							<p class="center dialog_text">Através de aplicações tecnológicas voltadas para seu negócio, você se diferencia da concorrência, torna seu trabalho mais atrativo e dinâmico com resultados em menos tempo. Seu cliente fica satisfeito e sua empresa se torna referência no mercado</p>
+						</div>
+					</div>
+				</modal>
+				<hr class="divisor_topico" />
+				<modal class="line_modal">
+					<div class="row">
+						<div class="col s12 l12">
+							<img src="_assets/images/16.svg" class="icon_imgModal">
+						</div>
+						<div class="col s12 l12">
+							<h5 class="dialog_text center colorModal_blue1 subtitle">Identidade</h5>
+							<p class="center dialog_text">Desenvolvemos soluções específicas para cada tipo de negócio. Nosso foco é criar soluções voltadas para otimização de trabalho e tempo, gerando mais resultado. Cada empresa que atendemos tem uma aplicação única, devido as suas especificidades</p>
+						</div>
+					</div>
+				</modal>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+			</div>
+		</div>
+
+		<!-- scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+		<script type="text/javascript" src="_assets/scripts/index.min.js"></script>
