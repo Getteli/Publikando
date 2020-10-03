@@ -74,7 +74,7 @@ $(document).ready(function(){
 
 		e.preventDefault(); // avoid to execute the actual submit of the form.
 		var form = $(".form_contact").serialize();
-		var url = "_assets/scripts/form-send.min.php";
+		var url = "_assets/scripts/send-mail.min.php";
 		$.ajax({
 			type: "POST",
 			url: url,
@@ -137,7 +137,7 @@ $(document).ready(function(){
 
 		e.preventDefault(); // avoid to execute the actual submit of the form.
 		var form = $(".form_contactMob").serialize();
-		var url = "_assets/scripts/form-send.min.php";
+		var url = "_assets/scripts/send-mail.min.php";
 		$.ajax({
 			type: "POST",
 			url: url,

@@ -1,0 +1,10 @@
+# .HTACCESS BY: GETTELI.01 ILION
+# Servidores como AWS, possuem um proprio htaccess (mas com outro nome - httpd.conf). Fica em etc/httpd/conf/ (Caso o servidor seja um EC2 linux da AWS, outros eu nao sei)
+# impedir o acesso
+	Order Allow,Deny 
+	Deny from all 
+
+	<FilesMatch "\.(jpg|gif|png|php|css)$">
+	Order Deny,Allow
+		Allow from all
+	</FilesMatch>
