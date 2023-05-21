@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://agenciapublikando.com.br/sitemap.xml
+Sitemap: https://getteli.github.io/Publikando/sitemap.xml
